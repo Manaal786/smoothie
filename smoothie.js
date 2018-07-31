@@ -983,10 +983,38 @@
           minValueString = chartOptions.yMinFormatter(this.valueRange.min, chartOptions.labels.precision),
           maxLabelPos = chartOptions.scrollBackwards ? 0 : dimensions.width - context.measureText(maxValueString).width - 2,
           minLabelPos = chartOptions.scrollBackwards ? 0 : dimensions.width - context.measureText(minValueString).width - 2;
+      var first = "1"; 
+      var sec = "2"; 
+      var third = "3"; 
+      var fourth = "4"; 
+      var fifth = "5"; 
+      var sixth = "6"; 
+      var seventh = "7"; 
+      var eight = "8"; 
+      var nine = "9";
+      var firstpos = chartOptions.scrollBackwards ? 0 : dimensions.width - context.measureText(first).width - 2;
+      var secondpos = chartOptions.scrollBackwards ? 0 : dimensions.width - context.measureText(sec).width - 2;
+      var thirdpos = chartOptions.scrollBackwards ? 0 : dimensions.width - context.measureText(third).width - 2;
+      var fourthpos = chartOptions.scrollBackwards ? 0 : dimensions.width - context.measureText(fourth).width - 2;
+      var fifthpos = chartOptions.scrollBackwards ? 0 : dimensions.width - context.measureText(fifth).width - 2;
+      var sixthpos = chartOptions.scrollBackwards ? 0 : dimensions.width - context.measureText(sixth).width - 2;
+      var seventhpos = chartOptions.scrollBackwards ? 0 : dimensions.width - context.measureText(seventh).width - 2;
+      var eightpos = chartOptions.scrollBackwards ? 0 : dimensions.width - context.measureText(eight).width - 2;
+      var ninepos = chartOptions.scrollBackwards ? 0 : dimensions.width - context.measureText(nine).width - 2;
       context.fillStyle = chartOptions.labels.fillStyle;
       context.fillText(maxValueString, maxLabelPos, chartOptions.labels.fontSize);
-      context.fillText(minValueString, minLabelPos, dimensions.height - 2);
+      context.fillText(nine,ninepos, height/10 + chartOptions.labels.fontSize);
+      context.fillText(eight, eightpos, 2*height/10 + chartOptions.labels.fontSize);
+      context.fillText(seventh, seventhpos, 3*height/10  + chartOptions.labels.fontSize);
+      context.fillText(sixth, sixthpos, 4*height/10 + chartOptions.labels.fontSize);
+      context.fillText(fifth, fifthpos, 5*height/10 + chartOptions.labels.fontSize);
+      context.fillText(fourth, fourthpos, 6*height/10 + chartOptions.labels.fontSize);
+      context.fillText(third, thirdpos, 7*height/10 + chartOptions.labels.fontSize);
+      context.fillText(sec, secondpos, 8*height/10 + chartOptions.labels.fontSize);
+      context.fillText(first, firstpos, 9*height/10 + chartOptions.labels.fontSize);
     }
+
+
 
     // Display intermediate y axis labels along y-axis to the left of the chart
     if ( chartOptions.labels.showIntermediateLabels
