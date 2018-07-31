@@ -1003,15 +1003,15 @@
       var ninepos = chartOptions.scrollBackwards ? 0 : dimensions.width - context.measureText(nine).width - 2;
       context.fillStyle = chartOptions.labels.fillStyle;
       context.fillText(maxValueString, maxLabelPos, chartOptions.labels.fontSize);
-      context.fillText(nine,ninepos, height/10 + chartOptions.labels.fontSize);
-      context.fillText(eight, eightpos, 2*height/10 + chartOptions.labels.fontSize);
-      context.fillText(seventh, seventhpos, 3*height/10  + chartOptions.labels.fontSize);
-      context.fillText(sixth, sixthpos, 4*height/10 + chartOptions.labels.fontSize);
-      context.fillText(fifth, fifthpos, 5*height/10 + chartOptions.labels.fontSize);
-      context.fillText(fourth, fourthpos, 6*height/10 + chartOptions.labels.fontSize);
-      context.fillText(third, thirdpos, 7*height/10 + chartOptions.labels.fontSize);
-      context.fillText(sec, secondpos, 8*height/10 + chartOptions.labels.fontSize);
-      context.fillText(first, firstpos, 9*height/10 + chartOptions.labels.fontSize);
+      context.fillText(nine,ninepos, 350/10 + chartOptions.labels.fontSize);
+      context.fillText(eight, eightpos, 2*350/10 + chartOptions.labels.fontSize);
+      context.fillText(seventh, seventhpos, 3*350/10  + chartOptions.labels.fontSize);
+      context.fillText(sixth, sixthpos, 4*350/10 + chartOptions.labels.fontSize);
+      context.fillText(fifth, fifthpos, 5*350/10 + chartOptions.labels.fontSize);
+      context.fillText(fourth, fourthpos, 6*350/10 + chartOptions.labels.fontSize);
+      context.fillText(third, thirdpos, 7*350/10 + chartOptions.labels.fontSize);
+      context.fillText(sec, secondpos, 8*350/10 + chartOptions.labels.fontSize);
+      context.fillText(first, firstpos, 9*350/10 + chartOptions.labels.fontSize);
     }
 
 
